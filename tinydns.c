@@ -30,6 +30,9 @@
 #define CFGFILE SYSCONFDIR"/ndjbdns/tinydns.conf"
 
 extern short mode;
+extern char pidfile[4096];
+extern char logfile[4096];
+extern char cfgfile[4096];
 static char seed[128];
 extern char *cfgfile, *logfile, *pidfile;
 

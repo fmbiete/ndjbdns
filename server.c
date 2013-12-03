@@ -134,16 +134,20 @@ check_option (int argc, char *argv[])
         case 'h':
             printh ();
             exit (0);
+            break;
 
         case 'v':
             printf ("%s version %s\n", prog, VERSION);
             exit (0);
+            break;
 
         case ':':
             errx (-1, "option `%c' takes an argument, see: --help", optopt);
+            break;
 
         default:
             errx (-1, "unknown option `%c', see: --help", optopt);
+            break;
         }
     }
 
